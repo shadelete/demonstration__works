@@ -1,0 +1,40 @@
+.info {
+  & .container{
+    display: flex;
+    align-items: center;
+  }
+  &__wrapper{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    justify-items: center;
+  }
+  &__left{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    & h1 {
+      color: #fff;
+    }
+    & p {
+      font-size: 1.4rem;
+      font-weight: 500;
+      line-height: 2.5rem;
+    }
+    & ul {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+  &__right{
+
+  }
+}
+
+@media (min-width: 991px) {
+  .selector {
+    color: blue;
+  }
+}

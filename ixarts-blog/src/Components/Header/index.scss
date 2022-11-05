@@ -1,0 +1,30 @@
+.header{
+  &__wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: clamp(0.5vw, 1vw, 1rem) 0;
+  }
+  &__logo{
+    & img {
+    }
+    & a {
+      display: flex;
+    }
+    & h1 {
+      line-height: 4rem;
+    }
+  }
+  &__nav{
+    & ul{
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      & a {
+        font-weight: 700;
+        font-size: clamp(.9rem, 1.2vw, 1.5rem);
+      }
+    }
+  }
+}
